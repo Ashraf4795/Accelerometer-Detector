@@ -1,4 +1,4 @@
-package com.ashrafmohamed.accelerometer_detector.detectors
+package com.ashrafmohamed.accelerometer_detector.detectors.detector
 
 import android.hardware.Sensor
 import android.hardware.SensorEvent
