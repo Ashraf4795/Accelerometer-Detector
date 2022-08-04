@@ -1,4 +1,4 @@
-package com.ashrafmohamed.accelerometer_detector.detectors.rules
+package com.ashrafmohamed.accelerometer_detector.detectors
 
 import android.hardware.SensorEvent
 
