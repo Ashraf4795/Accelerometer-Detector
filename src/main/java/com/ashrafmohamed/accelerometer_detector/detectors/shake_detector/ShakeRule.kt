@@ -1,7 +1,8 @@
-package com.ashrafmohamed.accelerometer_detector.detectors.rules
+package com.ashrafmohamed.accelerometer_detector.detectors.shake_detector
 
 import android.hardware.SensorEvent
 import android.hardware.SensorManager
+import com.ashrafmohamed.accelerometer_detector.detectors.Rule
 import kotlin.math.sqrt
 
 class ShakeRule: Rule {
