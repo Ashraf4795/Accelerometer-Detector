@@ -18,6 +18,12 @@ class Accelerometer (private val context: Context){
         sensorManager.registerListener(shakeDetector, accelerometerSensor, SensorManager.SENSOR_DELAY_FASTEST)
     }
 
+    fun detectJump(listener: (event: SensorEvent) -> Unit) {
+        val jumpDetector = ServiceLocator.getJumpDetector(listener)
+        disposal.add(jumpDetector)
+        sensorManager.registerListener(jumpDetector, accelerometerSensor, SensorManager.SENSOR_DELAY_FASTEST)
+    }
+
     fun clear() {
         disposal.forEach {
             sensorManager.unregisterListener(it)
