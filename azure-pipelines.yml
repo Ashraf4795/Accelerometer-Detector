@@ -7,8 +7,6 @@ trigger:
   branches:
     include:
       - main
-    exclude:
-      - '*'
   tags:
     include:
       - release
