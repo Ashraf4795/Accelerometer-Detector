@@ -4,6 +4,11 @@
 # https://aka.ms/yaml
 
 trigger:
+  branches:
+    include:
+      - main
+    exclude:
+      - '*'
   tags:
     include:
       - release
