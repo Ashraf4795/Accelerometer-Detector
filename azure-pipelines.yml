@@ -9,9 +9,9 @@ trigger:
       - main
   tags:
     include:
-      - 'debug*'
-    exclude:
       - 'release*'
+    exclude:
+      - 'debug*'
 
 
 pool:
